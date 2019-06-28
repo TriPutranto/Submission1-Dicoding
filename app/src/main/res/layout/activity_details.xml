@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <ImageView
+        android:id="@+id/img_backdrop"
+        android:src="@drawable/poster_themule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:background="@color/white"
+        android:padding="5dp">
+
+
+        <ImageView
+            android:id="@+id/img_poster"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@drawable/poster_themule"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="The Mule"
+            android:layout_toEndOf="@id/img_poster"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="21 Desember 2019"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="16dp"
+            android:layout_toEndOf="@+id/img_poster"
+            android:layout_below="@+id/tv_name"/>
+
+        <TextView
+            android:id="@+id/tv_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Budget"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14sp"
+            android:layout_toEndOf="@+id/img_poster"
+            android:layout_below="@+id/tv_release" />
+
+        <TextView
+            android:id="@+id/tv_revenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_budget"
+            android:layout_toEndOf="@+id/img_poster"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14sp"
+            tools:text="Revenue" />
+
+        <TextView
+            android:id="@+id/tv_genres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Genres"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14sp"
+            android:layout_toEndOf="@+id/img_poster"
+            android:layout_below="@id/tv_revenue"/>
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="overview"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="14sp"
+            android:layout_below="@+id/img_poster"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="overview"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="12sp"
+            android:layout_below="@+id/header"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
